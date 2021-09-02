@@ -9,7 +9,7 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 ## Pendahuluan
 
 <details>
-  <summary><b>Tentang Eka Putra</b></summary>
+  <summary><b>1. Tentang Eka Putra</b></summary>
   
   ![Eka Putra](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/ekaputra.png)
   
@@ -21,7 +21,7 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 </details>
 
 <details>
-  <summary><b>Mengenal Python</b></summary>
+  <summary><b>2. Mengenal Python</b></summary>
   
   ![Tentang Python](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/tentang-python-1.png)
   
@@ -42,7 +42,7 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 </details>
 
 <details>
-  <summary><b>Instalasi Python</b></summary>
+  <summary><b>3. Instalasi Python</b></summary>
   
   > **Instalasi Python tidak diperagakan di workshop ini**, saya berasumsi bahwa peserta workshop sudah memiliki Python terinstall di komputer masing-masing dan siap digunakan.
   
@@ -51,7 +51,7 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 </details>
 
 <details>
-  <summary><b>Menjalankan kode Python secara online</b></summary>
+  <summary><b>4. Menjalankan kode Python secara online</b></summary>
   
   Buat yang tidak memiliki Python di komputernya, peserta workshop juga bisa mengikuti program ini dengan menggunakan layanan online berikut ini:
   
@@ -86,14 +86,15 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 1. Percabangan
 1. Perulangan
 1. Function
-1. Dasar OOP (Pemrograman Berorientasi Object)
-1. Python import
+1. Pengenalan class
+1. Menggunakan import
 1. Penggunaan Library
+1. Dependency proyek Python
 
 ## Website dan Flask
 
 <details>
-  <summary><b>Bagaimana Website Bekerja?</b></summary>
+  <summary><b>1. Bagaimana Website Bekerja?</b></summary>
   
   ![Bagaimana Website Bekerja?](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/how-website-works.png)
   
@@ -112,7 +113,7 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 </details>
 
 <details>
-  <summary><b>Bagaimana Membuat Website?</b></summary>
+  <summary><b>2. Jenis dan Cara Membuat Website?</b></summary>
   
   ![Bagaimana Membuat Website?](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/membuat-website.png)
   
@@ -132,14 +133,16 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 </details>
 
 <details>
-  <summary><b>Flask Web Framework</b></summary>
+  <summary><b>3. Flask Web Framework</b></summary>
   
   ![Flask Web Framework](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/flask.png)
+  
+  [Flask Web Framework](https://flask.palletsprojects.com/en/2.0.x/)
   
 </details>
 
 <details>
-  <summary><b>Hello Flask</b></summary>
+  <summary><b>4. Hello Flask</b></summary>
   
   ![Hello Flask](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/hello-flask.png)
   
@@ -152,8 +155,69 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
 
 ## Membuat aplikasi todo list dengan Flask
 
-1. Cara kerja aplikasi
-1. Komponen aplikasi
-1. Merancang user interface (UI) dengan Bootstrap
-1. Menghubungkan UI dengan Flask
-1. Mencoba aplikasi
+
+![Apa yang akan kita pelajari](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/what-we-learn.png)
+
+Seperti tujuan dari workshop kali ini yaitu untuk mengajak teman-teman developer yang belum pernah memakai Python untuk mencoba Python dan juga memperkenalkan bagaimana pembuatan aplikasi berbasis web bisa dilakukkan dengan Flask (salah satu web framework berbasis Python).
+
+Saya tahu pasti bahwa buat teman-teman yang sama sekali belum pernah memakai Python dan langsung membuat aplikasi web sederhana pastinya tidak mudah, untuk itu saya merancang workshop ini dengan mempertimbangkan pengalaman peserta dimana buat yang belum pernah mencoba Python bisa mencobanya, dan buat yang sudah mengetahui dasarnya bisa mencoba Flask.
+
+Aplikasi inipun saya rancang supaya kita bisa mempraktekkan ilmu-ilmu yang kita pelajari pada saat pengenalan Python dasar.
+
+<details>
+  <summary><b>1. Tampilan Aplikasi</b></summary>
+  
+  ![Tampilan Aplikasi Todolist dengan Flask](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/flask-todolist-design.png)
+  
+  Tampilan aplikasi kita sangat sederhana namun tetap fungsional dan harus berfungsi sesuai dengan yang kita inginkan.
+  
+  User Interface (UI) dari aplikasi ini dibuat dengan menggunakan [UI framework Bootstrap](https://getbootstrap.com/) karena relatif mudah dipakai. Saya sudah menyediakan template yang akan kita gunakan untuk membuat Todo list ini, bisa diunduh [disini](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/4-flask-todolist-livecoding/index.html).
+  
+</details>
+
+<details>
+  <summary><b>2. Requirements Aplikasi</b></summary>
+  
+  ![Requirements Aplikasi Todolist dengan Flask](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/flask-todolist-requirements.png)
+  
+  Sebelum kita memulai sebuah proyek software, ada baiknya kita sudah memiliki banyangan apa tujuan akhir dari proyek yang akan kita buat. Apa fitur-fitur yang diperlukan dan bagaimana mereka akan bekerja. Ini penting karena perencanaan yang matang akan membuat proses pembuatan proyek berjalan lebih mulus meskipun tantangan-tantangan tidak terduga bisa saja muncul dalam prosesnya. Tapi itulah tugas seorang programmer, solving problem dengan teknologi.
+  
+  Pada gambar gambar diatas saya sudah menyiapkan beberapa requirements untuk proyek Todo kita kali ini, apabila semua requirements itu berhasil kita kerjakan maka proyek bisa dibilang sukses.
+  
+</details>
+
+<details>
+  <summary><b>3. Rancangan URL Aplikasi</b></summary>
+  
+  ![Rancangan URL Aplikasi Todolist dengan Flask](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/flask-todolist-urls.png)
+  
+  Sebelum kita mulai coding aplikasi berbasis web, kita juga perlu memiliki bayangan halaman-halaman apa yang kita perlukan dan URL-URL apa saja yang kita perlukan untuk mendukung aplikasi yang akan kita buat.
+  
+  Seperti terlihat diatas bahwa kita akan membuat 4 buah endpoint yang masing-masing memiliki satu tugas khusus. Kenapa kita perlu 4 endpoint? kenapa tidak satu saja? Karena lebih mudah membuat endpoint yang bertujuan untuk melakukkan satu tugas spesifik daripada membuat satu endpoint yang harus melakukkan banyak hal.
+  
+  Sekali lagi, tujuan kita adalah membuat aplikasi yang tidak cuma berjalan baik tetapi juga mudah untuk di maintain.
+</details>
+
+<details>
+  <summary><b>4. Demo Aplikasi</b></summary>
+  
+  ![Menjalankan Aplikasi](https://github.com/ekaputra07/workshop-python-unsika-2021/raw/main/screenshots/hello-flask-run.png)
+  
+  Buat yang ingin mencoba aplikasi yang sudah jadi, silahkan arahkan terminalnya ke direktori `3-flask-todolist/`.
+  
+  Pertama kita install dulu library yang kita perlukan untuk proyek ini, karena ini adalah proyek sederhana maka kita hanya perlu Flask, itu terlihat dari isi file `requirements.txt` yang merupakan cara kita mendaftarkan dependencies yang diperlukan sebuah proyek Python.
+  
+  Kita install semua library yang diperlukan dengan menjalankan perintah:
+
+  ```
+  pip install -r requirements.txt
+  ```
+
+  Apabila Flask sudah terinstall maka aplikasi tinggal dijalankan dengan perintah:
+  
+  ```
+  flask run
+  ```
+  
+  Setelah aplikasi berjalan maka tinggal buka web browser dan buka alamat: `localhost:5000`, localhost adalah alamat tempat server Flask berjalan dan 5000 adalah port aplikasi todo kita berjalan.
+</details>
