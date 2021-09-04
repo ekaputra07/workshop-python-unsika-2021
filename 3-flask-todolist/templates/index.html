@@ -58,15 +58,25 @@
         $(document).ready(function () {
             $('.update-todo').click(function () {
                 const id = $(this).data('id');
+                var that = this;
                 $.post('/update', { id: id }, function (data) {
-                    window.location.reload();
+                    // window.location.reload();
+                    if($(that).hasClass("bi-check-circle-fill")){
+                        $(that).removeClass('bi-check-circle-fill');
+                        $(that).addClass('bi-circle');
+                    } else {
+                        $(that).removeClass('bi-circle');
+                        $(that).addClass('bi-check-circle-fill');
+                    }
                 })
             });
 
             $('.delete-todo').click(function () {
                 const id = $(this).data('id');
+                var that = this;
                 $.post('/delete', { id: id }, function (data) {
-                    window.location.reload();
+                    // window.location.reload();
+                    $(that).closest('.list-group-item').remove();
                 })
             });
         });
