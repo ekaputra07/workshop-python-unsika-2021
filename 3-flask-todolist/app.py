@@ -20,8 +20,9 @@ def new():
     """
     Untuk membuat todo baru, hanya menerima request bertipe POST.
     """
-    new_item(request.form.get('todo'))
-    return redirect(url_for('home'))
+    name= request.form.get('name')
+    return new_item(name)
+    # return redirect(url_for('home'))
 
 
 @app.route('/update', methods=['POST'])
