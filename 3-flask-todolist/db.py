@@ -22,6 +22,7 @@ def new_item(name):
         'created': datetime.now()
     }
     items.append(item)
+    return item
 
 
 def update_item(id):
