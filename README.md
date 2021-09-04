@@ -4,7 +4,8 @@
 
 Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fakultas Ilmu Komputer Universitas Singaperbangsa Karawang**, 4 September 2021 (Online via Zoom).
 
-[>> Slides presentasi <<](https://docs.google.com/presentation/d/1kxU1M94zCGCGWMokkWkykZ7vQW9wFQkiMLliikV2ftM/edit?usp=sharing)
+- [>> Video Workshop](https://youtu.be/MlSfwmCn49k)
+- [>> Slides presentasi](https://docs.google.com/presentation/d/1kxU1M94zCGCGWMokkWkykZ7vQW9wFQkiMLliikV2ftM/edit?usp=sharing)
 
 ## Pendahuluan
 
