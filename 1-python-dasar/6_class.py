@@ -7,3 +7,16 @@
 # 2. Class dengan properti (variable)
 # 3. Class dengan method (fungsi)
 # 3. Class anakan (sub-class)
+
+class User:
+    nama_depan = "Python"
+    nama_belakang = "Rocks"
+    umur = 17
+
+    def nama_lengkap(self):
+        return self.nama_depan + self.nama_belakang
+
+user = User()
+
+print(user.umur)
+print(user.nama_lengkap())

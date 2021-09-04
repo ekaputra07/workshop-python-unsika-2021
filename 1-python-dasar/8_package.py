@@ -5,3 +5,9 @@
 # 1. Cara instalasi Package dengan `pip` (Package Installer for Python)
 # 2. Cara menggunakan pip dengan requirements.txt
 # 3. Mengimport dan menggunakan Package
+import requests
+
+hasil = requests.get('https://www.upkoding.com')
+
+print(hasil.status_code)
+print(hasil.text)

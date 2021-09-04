@@ -21,9 +21,9 @@
                 <p class="lead">The best todo-list software on the planet!</p>
             </div>
 
-            <form action="" method="POST">
+            <form action="/new" method="POST">
                 <div class="input-group mb-3">
-                    <input type="text" name="todo" required class="form-control form-control-lg"
+                    <input type="text" name="item_name" required class="form-control form-control-lg"
                         placeholder="Apa yang perlu kamu kerjakan?" aria-label="Apa yang perlu kamu kerjakan?">
                     <button class="btn btn-success" type="submit"><i class="bi bi-plus-lg me-2"></i>
                         Tambah
@@ -32,24 +32,19 @@
             </form>
 
             <div class="list-group">
+                {% for item in items %}
                 <div class="list-group-item list-group-item-action d-flex gap-3 py-4" aria-current="true">
-                    <i class="bi bi-circle text-success" style="font-size: 25px; cursor: pointer;">
+                    <i class="bi {% if item.status %}bi-check-circle-fill{% else %}bi-circle{% endif %} text-success update-item" data-id="{{ item.id }}"
+                        style="font-size: 25px; cursor: pointer;">
                     </i>
                     <div class="d-flex gap-2 w-100">
-                        <h3 class="mb-0">Belajar Python</h3>
+                        <h3 class="mb-0">{{ item.name }}</h3>
                     </div>
-                    <i class="bi bi-trash text-danger" style="font-size: 25px; cursor: pointer;">
+                    <i class="bi bi-trash text-danger delete-item" data-id="{{ item.id }}"
+                        style="font-size: 25px; cursor: pointer;">
                     </i>
                 </div>
-                <div class="list-group-item list-group-item-action d-flex gap-3 py-4" aria-current="true">
-                    <i class="bi bi-check-circle-fill text-success" style="font-size: 25px; cursor: pointer;">
-                    </i>
-                    <div class="d-flex gap-2 w-100">
-                        <h3 class="mb-0">Belajar Flask</h3>
-                    </div>
-                    <i class="bi bi-trash text-danger" style="font-size: 25px; cursor: pointer;">
-                    </i>
-                </div>
+                {% endfor %}
             </div>
         </main>
     </div>
@@ -61,7 +56,19 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
+            $('.update-item').click(function () {
+                const item_id = $(this).data('id')
+                $.post('/update', { item_id: item_id }, function () {
+                    window.location.reload()
+                })
+            })
 
+            $('.delete-item').click(function () {
+                const item_id = $(this).data('id')
+                $.post('/delete', { item_id: item_id }, function () {
+                    window.location.reload()
+                })
+            })
         });
     </script>
 </body>
