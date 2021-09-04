@@ -81,15 +81,14 @@ Materi workshop "Light up your Python!" **Himpunan Mahasiswa Sistem Informasi Fa
   
 </details>
 
-1. Hello World
-1. Tipe Data
-1. Percabangan
-1. Perulangan
-1. Function
-1. Pengenalan class
-1. Menggunakan import
-1. Penggunaan Library
-1. Dependency proyek Python
+1. [Hello World](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/1_hello_world.py)
+1. [Variable dan Tipe Data](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/2_variable_tipe_data.py)
+1. [Percabangan](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/3_percabangan.py)
+1. [Perulangan](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/4_perulangan.py)
+1. [Fungsi](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/5_fungsi.py)
+1. [Pengenalan class](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/6_class.py)
+1. [Module di Python](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/7_module.py)
+1. [Penggunaan Library atau Package](https://github.com/ekaputra07/workshop-python-unsika-2021/blob/main/1-python-dasar/8_package.py)
 
 ## Website dan Flask
 
